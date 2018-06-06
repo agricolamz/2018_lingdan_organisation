@@ -2,30 +2,43 @@
 output:
   html_document:
     toc: false
+    df_print: paged
 editor_options: 
   chunk_output_type: console
+knit: (function(inputFile, encoding) { 
+      out_dir <- 'docs';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, 'index.html')) })
 ---
+
+```{r setup, include=FALSE, warning=F}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE)
+```
 
 ### 2018 Lingdan {.tabset .tabset-fade .tabset-pills}
 
 #### рaсписание
-Расписание можно скачать [в формате `.csv`](https://raw.githubusercontent.com/agricolamz/2018_lingdan_organisation/master/2018_lingdan_calendar.csv) и импортировать в Google Calendar, MS Outlook и т. п.
-
-```{r, echo = FALSE, message=FALSE}
+```{r}
 library(tidyverse)
 library(lubridate)
-library(timevis)
-df <- read_csv("2018_lingdan_calendar.csv")
-df %>% 
-  mutate(`Start Date` = dmy_hms(paste(`Start Date`, `Start Time`)),
-         id = 1:n(),
-         Subject = str_replace_all(Subject, "---", "<br>"),
-         Subject = paste0(Subject, "</a> <br>",
-                          wday(`Start Date`, label = TRUE))) %>% 
-  select("start" = "Start Date", "content" = "Subject") %>% 
-  timevis()
+read.csv("2018_lingdan_calendar.csv") %>%
+  mutate(Start.Date = dmy(Start.Date),
+         Subject = str_replace_all(Subject, "---", "")) %>% 
+  spread(Start.Date, Subject, fill = "") %>% 
+  select(-End.Date) %>% 
+  rename(начало = Start.Time,
+         конец = End.Time) %>% 
+  DT::datatable(options = list(pageLength = 7, dom = 'tip', info = FALSE, paging = FALSE), rownames = FALSE)
 ```
 
+
+
+Расписание можно скачать [в формате `.csv`](https://raw.githubusercontent.com/agricolamz/2018_lingdan_organisation/master/2018_lingdan_calendar.csv) и импортировать в Google Calendar, MS Outlook и т. п.
+
+
 #### сoфт
+тро-ло-ло
+
 #### бытoвое
-#### трaнспорт
+тро-ло-ло
