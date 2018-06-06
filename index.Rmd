@@ -23,7 +23,7 @@ df %>%
          Subject = paste0(Subject, "</a> <br>",
                           wday(`Start Date`, label = TRUE))) %>% 
   select("start" = "Start Date", "content" = "Subject") %>% 
-  timevis(fit = FALSE)
+  timevis()
 ```
 
 #### сoфт
