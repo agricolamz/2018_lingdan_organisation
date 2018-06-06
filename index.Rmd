@@ -1,0 +1,31 @@
+---
+output:
+  html_document:
+    toc: false
+editor_options: 
+  chunk_output_type: console
+---
+
+### 2018 Lingdan {.tabset .tabset-fade .tabset-pills}
+
+#### рaсписание
+Расписание можно скачать [в формате `.csv`](https://raw.githubusercontent.com/agricolamz/2018_lingdan_organisation/master/2018_lingdan_calendar.csv) и импортировать в Google Calendar, MS Outlook и т. п.
+
+```{r, echo = FALSE, message=FALSE}
+library(tidyverse)
+library(lubridate)
+library(timevis)
+df <- read_csv("2018_lingdan_calendar.csv")
+df %>% 
+  mutate(`Start Date` = dmy_hms(paste(`Start Date`, `Start Time`)),
+         id = 1:n(),
+         Subject = str_replace_all(Subject, "---", "<br>"),
+         Subject = paste0(Subject, "</a> <br>",
+                          wday(`Start Date`, label = TRUE))) %>% 
+  select("start" = "Start Date", "content" = "Subject") %>% 
+  timevis(fit = FALSE)
+```
+
+#### сoфт
+#### бытoвое
+#### трaнспорт
