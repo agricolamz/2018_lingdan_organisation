@@ -18,15 +18,17 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE)
 
 ### 2018 Lingdan {.tabset .tabset-fade .tabset-pills}
 
-#### рaсписание
+#### timetable
 ```{r}
 library(tidyverse)
 library(lubridate)
 read.csv("2018_lingdan_calendar.csv") %>%
   mutate(Start.Date = dmy(Start.Date),
-         Subject = str_replace_all(Subject, "---", "")) %>% 
-  spread(Start.Date, Subject, fill = "") %>% 
+         Subject = str_replace_all(Subject, "---", ""),
+         Start.Time = str_replace_all(Start.Time, ":00$", ""),
+         End.Time = str_replace_all(End.Time, ":00$", "")) %>% 
   select(-End.Date) %>% 
+  spread(Start.Date, Subject, fill = "") %>% 
   rename(начало = Start.Time,
          конец = End.Time) %>% 
   DT::datatable(options = list(pageLength = 7, dom = 'tip', info = FALSE, paging = FALSE), rownames = FALSE)
@@ -36,25 +38,26 @@ read.csv("2018_lingdan_calendar.csv") %>%
 
 Расписание можно скачать [в формате `.csv`](https://raw.githubusercontent.com/agricolamz/2018_lingdan_organisation/master/2018_lingdan_calendar.csv) и импортировать в Google Calendar, MS Outlook и т. п.
 
+#### life conditions
 
-#### сoфт
+
+#### software
 Мы будем раздавать `docker`, чтобы не было мучений с версиями и прочим, но Вы можете пойти совим путем и поставить все самостоятельно. С интернетом на школе плохо, так что посторайтесь не тратить его на скачивание софта, который можно было скачать заранее.
 
 * **Docker**, **Linux** и все такое
-* [**Praat**](http://www.fon.hum.uva.nl/praat/) ставиться на все, что угодно. Скачайте для своей операционной системы.
-* [**Elan**](https://tla.mpi.nl/tools/tla-tools/elan/download/) ставиться на все, что угодно. Скачайте для своей операционной системы.
-* **Моделирование топика**
-* **Чатботы**
-* **Сетевой анализ**
-* **ELAN → корпус**
-* **Распознавание звука**
+* **Praat** --- [программа](http://www.fon.hum.uva.nl/praat/) ставиться на все, что угодно. Скачайте для своей операционной системы.
+* **Elan** --- [программа](https://tla.mpi.nl/tools/tla-tools/elan/download/) ставиться на все, что угодно. Скачайте для своей операционной системы.
 * Для курса по **лингвистической картографии** нужно поставить несколько R пакетов:
 ```
 install.packages("lingtypology")
 install.packages("leaflet")
 install.packages("rmarkdown")
+install.packages("dplyr")
+install.packages("leaflet.extras")
+install.packages("mapedit")
 ```
-
-
-#### бытoвое
-тро-ло-ло
+* **Моделирование топика**
+* **Чатботы**
+* **Сетевой анализ**
+* **ELAN → корпус**
+* **Распознавание звука**
