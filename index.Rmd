@@ -19,6 +19,7 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE)
 ### 2018 Lingdan {.tabset .tabset-fade .tabset-pills}
 
 #### timetable
+Все занятия будут проходить во 2-ой комнате 4-ого корпуса.
 ```{r}
 library(tidyverse)
 library(lubridate)
