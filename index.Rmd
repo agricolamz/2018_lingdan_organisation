@@ -18,8 +18,8 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE)
 
 ### 2018 Lingdan {.tabset .tabset-fade .tabset-pills}
 
-* [чат LingDan](https://t.me/joinchat/DtVuM0dTgE_Td8FF9GxXOA) --- флуд и т. п.
-* канал Andan для организационных сообщений (будут дублироваться на почту)
+* [чат LingDan](https://t.me/joinchat/DtVuM0dTgE_Td8FF9GxXOA) --- наш флуд и эмоции
+* [канал Andan](https://t.me/come_andan) для организационных сообщений (будут дублироваться на почту)
 
 #### timetable
 Все занятия будут проходить во 2-ой комнате 4-ого корпуса.
