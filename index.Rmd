@@ -79,7 +79,7 @@ install.packages(c("ggplot2", "igraph", "networkD3", "stylo"))
 ```
 pip install flask lxml ijson Flask-Babel xlsxwriter
 ```
-и другие штуки: ffmpeg elasticsearch 5.x
+А еще [ffmpeg](https://www.ffmpeg.org/download.html) и  (elasticsearch 5.x)[https://www.elastic.co/downloads/past-releases/elasticsearch-5-6-10]
 
 * Для курса **Распознавание звука** нужно поставить Kaldi на Linux:
 ```
