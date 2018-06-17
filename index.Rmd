@@ -63,7 +63,7 @@ read.csv("2018_lingdan_calendar.csv") %>%
 ```
 install.packages(c("lingtypology", "leaflet", "rmarkdown", "dplyr", "leaflet.extras", "mapedit", "mapview"))
 ```
-* **Моделирование топика**
+* **Тематическое моделирование**
 * **Чатботы**
 * Для курса **Сетевого анализа** нужно поставить Python библиотеку:
 ```
