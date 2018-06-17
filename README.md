@@ -1,5 +1,1 @@
-# The World Consonant Alternation Database
-
-[![DOI](https://zenodo.org/badge/77345509.svg)](https://zenodo.org/badge/latestdoi/77345509)
-
-Look at the [WCAD website](https://agricolamz.github.io/wcad/).
+[Материалы](https://agricolamz.github.io/2018_lingdan_organisation/) лингвистического направления мастерской Андан на Летней Школе 2018
