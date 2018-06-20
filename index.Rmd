@@ -64,6 +64,9 @@ read.csv("2018_lingdan_calendar.csv") %>%
 install.packages(c("lingtypology", "leaflet", "rmarkdown", "dplyr", "leaflet.extras", "mapedit", "mapview"))
 ```
 * **Тематическое моделирование**
+```
+pip install gensim sklearn
+```
 * **Чатботы**
 * Для курса **Сетевого анализа** нужно поставить Python библиотеку:
 ```
