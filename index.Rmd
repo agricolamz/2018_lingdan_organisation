@@ -76,8 +76,7 @@ pip install gensim sklearn
 ```
 pip install pyTelegramBotAPI dialogflow
 ```
-а еще нужно установить [DeepPavlov](https://github.com/deepmipt/DeepPavlov). Если вы работаете под другими операционными системами нужно установить docker, мы раздадим docker с DeepPavlov: [Mac](https://docs.docker.com/docker-for-mac/install/), [Windows](https://docs.docker.com/docker-for-windows/install/).
-
+Если вы работаете под другими операционными системами нужно установить docker: [Mac](https://docs.docker.com/docker-for-mac/install/), [Windows](https://docs.docker.com/docker-for-windows/install/).
 
 * Для курса **Сетевого анализа** нужно поставить Python библиотеку:
 ```
