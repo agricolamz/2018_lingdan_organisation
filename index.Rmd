@@ -102,3 +102,8 @@ upstream cd kaldi
 а дальше все написано в файле INSTALL.
 
 Если вы работаете под другими операционными системами нужно установить docker, мы раздадим docker с Kaldi: [Mac](https://docs.docker.com/docker-for-mac/install/), [Windows](https://docs.docker.com/docker-for-windows/install/).
+
+#### materials
+
+* Г. Мороз, [Акустика, Praat, ELAN](https://github.com/agricolamz/2018.07.30_LINGDAN_Praat_Elan)
+* Г. Мороз, [lingtypology](https://ropensci.github.io/lingtypology/)
