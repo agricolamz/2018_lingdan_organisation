@@ -3,6 +3,7 @@ output:
   html_document:
     toc: false
     df_print: paged
+    self_contained: yes
 editor_options: 
   chunk_output_type: console
 knit: (function(inputFile, encoding) { 
