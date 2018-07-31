@@ -108,3 +108,4 @@ upstream cd kaldi
 
 * Г. Мороз, [Акустика, Praat, ELAN](https://github.com/agricolamz/2018.07.30_LINGDAN_Praat_Elan)
 * Г. Мороз, [lingtypology](https://ropensci.github.io/lingtypology/)
+* C. Ершова [чатботы](https://github.com/religofsil/lingdan_chatbots/blob/master/chatbots_intro.pdf)
