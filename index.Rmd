@@ -110,4 +110,5 @@ upstream cd kaldi
 * Г. Мороз, [lingtypology](https://ropensci.github.io/lingtypology/)
 * C. Ершова [чат-боты](https://github.com/religofsil/lingdan_chatbots/blob/master/chatbots_intro.pdf)
 * Д. Скорнинин [сетевой анализ](https://danilsko.github.io/slides/andan.html#/)
+* М. Дубова [Байесовская статистика](https://docs.google.com/presentation/d/1yAtmaKTqlXb97j4s50PZChfSxnB2cwHBrmMAi5StYQI)
 * Е. Мещерекова тематическое моделирование
